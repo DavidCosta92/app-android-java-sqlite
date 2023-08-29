@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">calculadora</string>
+
+
+    <string name="btn_registrar_usuario">Registrarse</string>
+    <string name="btn_iniciar_sesion">Iniciar sesion</string>
+    <string name="text_registro_nuevo_usuario">Bienvenido, agrega tus datos para registrarte</string>
+    <string name="text_bienvenido_home">¡ Hola !</string>
+
+    <string name="email">Iniciar sesion</string>
+    <string name="password">Iniciar sesion</string>
+
+</resources>

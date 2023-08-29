@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vehiculo_main_crud_sqlite">
+
+    <EditText
+        android:id="@+id/etpatente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="patente"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etmarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="marca"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etmodelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="modelo"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etprecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="precio"
+        android:inputType="number|numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="agregar"
+        android:text="agregar" />
+
+    <Button
+        android:id="@+id/btn_buscarPatente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buscarPatente"
+        android:text="Buscar por patente" />
+
+    <Button
+        android:id="@+id/btn_borrarPatente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="borrarPorPatente"
+        android:text="Borrar por patente" />
+
+    <Button
+        android:id="@+id/btn_modificarPorPatente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="modificarPorPatente"
+        android:text="Modificar Por Patente" />
+
+</LinearLayout>
