@@ -11,10 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class vehiculo_main_crud_sqlite extends AppCompatActivity {
-
     EditText etPatente, etMarca, etModelo, etPrecio;
     AdminSQLiteOpenHelper admin;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,20 +27,16 @@ public class vehiculo_main_crud_sqlite extends AppCompatActivity {
     public void agregar(View v){
         SQLiteDatabase bd = admin.getWritableDatabase();// abre la bd
         ContentValues registro = new ContentValues(); // crea un objeto que luego sera un nuevo registro
-
         registro.put("patente", etPatente.getText().toString());// agrego datos al objeto registro
         registro.put("marca", etMarca.getText().toString());
         registro.put("modelo", etModelo.getText().toString());
         registro.put("precio", etPrecio.getText().toString());
         bd.insert("vehiculos", null, registro);// inserta en tabla "vehiculos"
-
         etPatente.setText("");// limpio pantalla
         etMarca.setText("");
         etModelo.setText("");
         etPrecio.setText("");
-
         bd.close();// cierro conexion bd
-
         Toast.makeText(this,"Se agrego vehiculo", Toast.LENGTH_SHORT).show();
     }
 
